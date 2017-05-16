@@ -42,12 +42,12 @@ void init_target_properties(void)
 	std::string bootloader = property_get("ro.bootloader");
 
 	if (bootloader.find("J500FN") == 0) {
-		device = (char *)"j5nltexx";
+		device = (char *)"j5nlte";
 		model = (char *)"SM-G530FN";
 		network_type=LTE_DEVICE;
 	}
 	else if (bootloader.find("J500F") == 0) {
-		device = (char *)"j5ltexx";
+		device = (char *)"j5lte";
 		model = (char *)"SM-G530F";
 		network_type=LTE_DEVICE;
 	}
