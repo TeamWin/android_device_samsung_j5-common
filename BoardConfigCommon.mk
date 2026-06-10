@@ -20,4 +20,4 @@ DEVICE_PATH := device/samsung/j5-common
 
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_j5
-TARGET_RECOVERY_DEVICE_MODULES := libinit_j5 tzdata
+TARGET_RECOVERY_DEVICE_MODULES := libinit_j5
