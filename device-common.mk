@@ -21,18 +21,3 @@ $(call inherit-product, device/samsung/msm8916-common/msm8916.mk)
 $(call inherit-product-if-exists, vendor/samsung/j5-common/j5-common-vendor.mk)
 
 DEVICE_PATH := device/samsung/j5-common
-
-# Screen density
-PRODUCT_AAPT_CONFIG := normal hdpi xhdpi
-PRODUCT_AAPT_PREF_CONFIG := xhdpi
-TARGET_SCREEN_DENSITY := 320
-
-# Proprieties
--include $(DEVICE_PATH)/system_prop.mk
-
-# Ramdisk
-PRODUCT_PACKAGES += \
-    init.target.rc
-
-# Inhert dalvik heap values from aosp
-$(call inherit-product, frameworks/native/build/phone-xhdpi-1024-dalvik-heap.mk)
